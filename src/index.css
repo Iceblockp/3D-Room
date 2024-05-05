@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+
+
+  .view{
+    transform-style: preserve-3d;
+    transform-origin: center;
+    border: 3px solid black;
+    
+  }
+  .turn{
+    transform: rotateX(-60deg);
+  }
+  
+  .red {
+    transform: translateZ(1px);
+    background: radial-gradient(circle at center, transparent 30px,rgb(63, 12, 12) 31px,rgb(134, 22, 22) 31px, rgb(237, 104, 104) 32px)
+    /* background-image: linear-gradient(to right, red 0%, red 40%,black 41%, transparent 40%, transparent 60%,black 61%, red 60%, red 100%), linear-gradient(to bottom, red 0% , red 40%,black 41%, transparent 40%, transparent 60%, black 61%, red 60%, red 100%); */
+  }
+  .green {
+    transform: translateZ(-1000px);
+    background-image: linear-gradient(to right, green 0%, green 40%, transparent 40%, transparent 60%, green 60%, green 100%), linear-gradient(to bottom, green 0% , green 40%, transparent 40%, transparent 60%, green 60%, green 100%);
+    animation-name: identifier;
+    animation-duration: 2s;
+
+
+  }
+  .blue {
+    transform: translateZ(-2000px);
+    background-image: linear-gradient(to right, blue 0%, blue 40%, transparent 40%, transparent 60%, blue 60%, blue 100%), linear-gradient(to bottom, blue 0% , blue 40%, transparent 40%, transparent 60%, blue 60%, blue 100%);
+    animation-name: identifier;
+    animation-duration: 2s;
+
+  }
+  .under{
+    background: purple;
+    transform: rotateX(90deg) translateY(500px);
+    transform-origin: bottom;
+  }
+  .toping{
+    background: violet;
+    transform: rotateX(270deg) translateY(-500px);
+    transform-origin: top;
+  }
+  .left{
+    background: sandybrown;
+    transform: rotateY(90deg) translateX(-500px);
+    transform-origin: left;
+  }
+  .right{
+    background: palegreen;
+    transform: rotateY(270deg) translateX(500px);
+    transform-origin: right;
+  }
+
+  @keyframes identifier {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+}
