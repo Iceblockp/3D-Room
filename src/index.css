@@ -46,7 +46,7 @@
 
   .under {
     background: rgba(77, 50, 64, 0.9);
-    transform: rotateX(90deg) translateY(500px);
+    transform: rotateX(90deg) translateY(1500px);
     transform-origin: bottom;
   }
 

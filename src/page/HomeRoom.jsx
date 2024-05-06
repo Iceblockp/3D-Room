@@ -59,7 +59,7 @@ const HomeRoom = () => {
             <SecondLayer/>
           </div>
           <div className={`third  absolute w-full ${scrollY > 1400 ? "block" : "block"} h-full`}></div>
-          <div className="under absolute w-full h-[2500px] bottom-0"></div>
+          <div className="under absolute w-full h-[3500px] bottom-[100px]"></div>
           <div className="toping absolute bg-orange-300 w-full h-[2500px] top-0"><TopLayer /></div>
           <div className="left absolute h-full w-[2500px] left-0">
             <LeftLayer/>
