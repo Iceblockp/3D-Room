@@ -46,7 +46,7 @@
 
   .under {
     background: rgba(77, 50, 64, 0.9);
-    transform: rotateX(90deg) translateY(1500px);
+    transform: rotateX(270deg) translateY(2000px);
     transform-origin: bottom;
   }
 
@@ -56,15 +56,15 @@
     transform-origin: top;
   }
 
-  .left {
+  .lefting {
     background: sandybrown;
     transform: rotateY(90deg) translateX(-500px);
     transform-origin: left;
   }
 
-  .right {
+  .righting {
     background: palegreen;
-    transform: rotateY(270deg) translateX(500px);
+    transform: rotateY(90deg) translateX(2000px);
     transform-origin: right;
   }
 

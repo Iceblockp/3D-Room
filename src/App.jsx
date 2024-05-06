@@ -15,7 +15,7 @@ window.addEventListener('scroll',() => {
     <div>
       
 
-      <div  className={`bg-[#040724] fixed flex  justify-center items-center w-full h-screen`}>
+      <div  className={`bg-[#040724] fixed flex  justify-center items-center w-full h-[100vh]`}>
         <HomeRoom />
         
       </div>
