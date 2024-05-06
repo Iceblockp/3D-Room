@@ -43,7 +43,7 @@ const HomeRoom = () => {
   return (
     <div
           style={{
-            transform: `perspective(500px) rotateX(0deg) rotateY(${firstR}deg) translateZ(${pax}px)`,
+            transform: `perspective(500px) rotateX(0deg) rotateY(${firstR}deg) translateZ(-${pax}px)`,
           }}
           className=' relative view border-2 border-gray-700 w-full h-full'>
 
@@ -51,14 +51,14 @@ const HomeRoom = () => {
           {/* start layer  */}
 
 
-          <div className={`first  ${scrollY > 1300 ? "hidden" : "block"}  absolute w-full h-full`}>
+          <div className={`firstw  ${scrollY > 1300 ? "hidden" : "block"}  absolute w-full h-full`}>
             <BaseLayer />
           </div>
 
-          <div className={` second absolute w-full h-full ${scrollY > 650 ? "block" : "block"} `}>
+          <div className={` secondw absolute w-full h-full ${scrollY > 650 ? "block" : "block"} `}>
             <SecondLayer/>
           </div>
-          <div className={`third  absolute w-full ${scrollY > 1400 ? "block" : "block"} h-full`}></div>
+          <div className={`thirdw  absolute w-full ${scrollY > 1400 ? "block" : "block"} h-full`}></div>
           <div className="under absolute w-full h-[3500px] bottom-[100px]"></div>
           <div className="toping absolute bg-orange-300 w-full h-[2500px] top-0"><TopLayer /></div>
           <div className="left absolute h-full w-[2500px] left-0">
